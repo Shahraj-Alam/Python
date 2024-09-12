@@ -1,0 +1,10 @@
+exam = int(input("Enter your mark: "))
+attend = int(input("Enter your attendence in percentage: "))
+if exam>90 and attend>90:
+    print("Grade = A")
+elif exam > 80 and exam <= 90 and attend > 90:
+  print("Grade = B")
+elif exam > 70 and exam <=80 and attend > 90:
+ print("Grade = C")
+else:
+ print("Fail")
