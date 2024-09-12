@@ -1,0 +1,13 @@
+temp = input("Is your temperature high? ")
+if temp == "Yes":
+  throat = input("Is your throat sore?")
+else:
+ print("You don't have any problem in your body")
+if throat == "Yes":
+  print("You may have throat infection")
+else:
+  cough = input("Do you have cough?")
+  if cough == "Yes" :
+   print("You have a chest infection")
+  else:
+   print("You have fever")
