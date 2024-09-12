@@ -1,0 +1,14 @@
+car = int(input ("If you choose Economy car press 1, if you choose Saloon car press 2, if you choose Sports car press 3: "))
+if car == 1 or car == 2 or car == 3:
+ choice = input("Do you want to Proceed or Cancel: ")
+else:
+ print("Invalid") 
+ 
+if car == 1 and choice == "Proceed":
+  print("You have chosen Economy car,your booking is confirmed ")
+elif car == 2 and choice == "Proceed":
+  print("You have chosen Saloon car,your booking is confirmed")
+elif car == 3 and choice == "Proceed":
+  print("You have chosen Sports car,your booking is confirmed")
+else:
+  print("Have a nice day!")
