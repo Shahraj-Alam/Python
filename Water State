@@ -1,0 +1,8 @@
+temp = float(input("Enter temperature in °C: "))
+
+if temp <= 0:
+    print("The water is in solid state")
+elif temp > 0 and temp < 100:
+    print("The water is in liquid state")
+else:
+    print("The water is in gas state")
