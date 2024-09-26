@@ -1,0 +1,15 @@
+gbp = float(input("Enter the number of british pounds: "))
+currency = input("Enter the currency(USD, Euro, Yuan, Yen): ")
+
+if currency == "USD":
+    exchange = gbp * 1.3
+elif currency == "Euro":
+    exchange = gbp * 1.1
+elif currency == "Yuan":
+    exchange = gbp * 8.92
+elif currency == "Yen":
+    exchange = gbp * 138.44
+else:
+    print("ERROR")
+   
+print(gbp , "GBP =", exchange, currency) 
