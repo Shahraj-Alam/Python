@@ -1,0 +1,12 @@
+nitrate = float(input("Enter nitrate level from the test: "))
+
+if nitrate > 10:
+    print("For",nitrate,"nitrate dose 3 ml of carbon")
+elif nitrate > 2.5 and nitrate < 10:
+    print("For",nitrate, "nitrate dose 2 ml of carbon.")
+elif nitrate > 1 and nitrate < 2.5:
+    print("For",nitrate, "nitrate dose 1 ml of carbon.")
+elif nitrate <= 1 :
+    print("For",nitrate, "nitrate dose 0.5 ml of carbon.")
+else:
+    print("ERROR")
