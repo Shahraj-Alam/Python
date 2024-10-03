@@ -1,0 +1,7 @@
+drug = float(input("Enter the quantity of the drug given in mg"))
+
+noHours = 0
+while drug >= 0.1:
+    noHours = noHours + 1 
+    drug = drug*0.95
+print(noHours)
