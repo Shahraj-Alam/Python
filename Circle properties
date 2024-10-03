@@ -1,0 +1,14 @@
+def area(diameter):
+  radius = diameter/2
+  area = 3.14*(radius*radius)
+  return area
+  
+def circum(diameter):
+  circum = 3.14*diameter
+  return circum
+
+diameter = float(input("Enter the diameter of the circle: "))
+area = area(diameter)
+circum = circum(diameter)
+print("Area: ",area)
+print("Circumference: ",circum)
