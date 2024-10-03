@@ -1,0 +1,38 @@
+def periodic_table(element):
+    match element:
+     case "Li" |"Lithium":
+         print("Symbol: Li")
+         print("Element: Lithium")
+         print("Atomic weight: 6.94")
+         print("Group: Alkali")
+     case "Na" | "Sodium":
+         print("Symbol: Na")
+         print("Element: Sodium")
+         print("Atomic weight: 22.99")
+         print("Group: Alkali")
+     case "K" | "Potassium":
+         print("Symbol: K")
+         print("Element: Potassium")
+         print("Atomic weight: 39.098")
+         print("Group: Alkali")  
+     case "F" | "Fluorine":
+         print("Symbol: F")
+         print("Element: Fluorine")
+         print("Atomic weight: 18.998")
+         print("Group: Halogens")
+     case "Cl" | "Chlorine":
+         print("Symbol: Cl")
+         print("Element: Chlorine")
+         print("Atomic weight: 35.45")
+         print("Group: Halogens")
+        
+     case "Br" | "Bromine":
+         print("Symbol: Br")
+         print("Element: Bromine")
+         print("Atomic weight: 79.904")
+         print("Group: Halogens")
+     case _:
+            print("Element is not in the catalogue.")
+            
+search = ("Enter the symbol or name of the element")
+periodic_table(search)
