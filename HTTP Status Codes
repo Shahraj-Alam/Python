@@ -1,0 +1,10 @@
+code = int(input("Enter status code: "))
+
+if code == 400:
+ print("Bad Request")
+elif code == 401 or code == 403:
+ print("Authenticator Error")
+elif code == 404:
+ print("Not Found")
+else:
+ print("Unknown Error")
