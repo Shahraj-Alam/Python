@@ -1,0 +1,12 @@
+value = int(input("Enter the value of the car purchased: £"))
+resale_value = int(input("Enter the minimum part exchange value: £"))
+
+year = 0
+depreciation = 0.25
+
+while value > resale_value and resale_value > 0:
+     print("In year", year, "the car is worth £", value)
+     value = int(value - (value * depreciation))
+     year = year + 1
+    
+print("Part exchange before the end of year", year)
