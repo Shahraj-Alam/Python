@@ -1,0 +1,9 @@
+spain = ""
+England = ""
+while spain != "Madrid":
+    spain = input("What is the capital city of Spain? ")
+
+while England != "London":
+    England = input ("What is the capital city of England? ")
+
+print("The quiz is complete.")
