@@ -1,0 +1,14 @@
+def compound(balance,interestRate,target):
+    year = 1
+    interestRate = interestRate / 100
+    
+    while balance < target:
+        interest = balance * interestRate
+        balance = int(balance + interest)
+        print("Year", year,": Balance £", balance)
+        year = year + 1
+
+balance = int(input("Enter balance in the nearest pound"))
+interestRate = float(input("Enter the % interest rate"))
+target = int(input("Enter the target balance in the nearest pound"))
+compound(balance,interestRate,target)
