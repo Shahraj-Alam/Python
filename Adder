@@ -1,0 +1,25 @@
+def adder():
+    total = 0
+    top = 0
+    count = 0
+    ave = 0
+    bottom = 0
+    complete = False
+    while not complete:
+        number = float(input("Enter number: "))
+        if number != 0:
+            total = total + number
+            count = count + 1
+            if number > top:
+                top = number
+                if count == 0 or number < bottom:
+                    bottom = number
+        else:
+            complete = True
+            if count > 0:
+                ave = total / count
+            else:
+                ave = 0
+    print("Total:", total, "Top:", top,"Bottom:", bottom,"Ave:", ave)
+
+adder()
