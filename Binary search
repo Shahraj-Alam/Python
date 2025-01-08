@@ -1,0 +1,26 @@
+def binary_search(item,search_item):
+    Found = False
+    first = 0
+    last = len(item) - 1
+    
+    while first <= last and Found == False:
+        midpoint = (first + last) // 2
+        
+        if item[midpoint] == search_item:
+            Found = True
+        else:
+            if item[midpoint] < search_item:
+                first = midpoint + 1
+            else:
+                last = midpoint - 1 
+                
+    if Found == True:
+       print("Item found at position", midpoint)
+    else:
+       print("Item not found")
+                    
+
+item = ["Alabama", "California", "Delaware", "Florida", "Georgia"]
+search_item = input("Enter the state to find: ")
+
+binary_search(item,search_item)
